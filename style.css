@@ -1,0 +1,127 @@
+ body {
+            background-color: aliceblue;
+        }
+
+        .head {
+            text-align: center;
+            color: goldenrod;
+            background-color: black;
+            border-radius: 5px;
+        }
+        
+
+        .container {
+            background-color: goldenrod;
+            border: 2px solid black;
+            height: 75vh;
+            width: 35vw;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-sizing: border-box;
+
+        }
+
+        .functions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+        }
+
+        .container .functions .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 60px;
+            width: 100%;
+            padding: 30px;
+            box-sizing: border-box;
+            justify-content: space-between;
+
+        }
+
+        .container .music {
+            height: 50%;
+            width: 90%;
+            margin: 10px auto;
+            /* background-color: black; */
+
+        }
+
+        .container .music img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .container .functions .buttons .btn {
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            border: none;
+            height: 44px;
+            cursor: pointer;
+            width: 50px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .container .functions .buttons .btn:hover {
+            background-color: black;
+            color: white;
+        }
+
+        .container .functions .progress-container {
+            width: 90%;
+            /* same as max width you want */
+            height: 10px;
+            /* thickness of the bar */
+            background-color: black;
+            /* black base bar */
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            /* hides overflow if blue is larger */
+        }
+
+        .container .functions .progress-container .progress-bar {
+            height: 100%;
+            width: 0%;
+            background-color: blue;
+            transition: width 0.1s linear;
+            /* smooth movement */
+        }
+
+        .container .functions .timer {
+
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 90%;
+            height: 20px;
+            padding: 2px 5px;
+            box-sizing: border-box;
+
+        }
+
+        @media screen and (max-width: 900px) {
+            .container {
+                width: 50vw;
+            }
+        }
+
+        @media screen and (max-width: 800px) {
+            .container {
+                width: 60vw;
+            }
+        }
+
+        @media screen and (max-width: 510px) {
+            .container {
+                width: 90vw;
+                height: 70vh;
+            }
+        }
