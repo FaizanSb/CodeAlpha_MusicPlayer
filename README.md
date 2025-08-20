@@ -72,6 +72,8 @@ Add shuffle & repeat functionality
 
 Add album art / cover image display
 
-👨‍💻 Author
+👨‍💻 Author:
+
 Muhammad Faizan
+
 Internship Task Project
